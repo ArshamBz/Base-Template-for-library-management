@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Library</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Add Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">List of borrowed books</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-4">
+
+    <h2>Add Book</h2>
+    <form method="post" novalidate="">
+        <div class="mb-3">
+            <p>
+                <label for="id_title">Title:</label>
+                <input type="text" name="title" maxlength="200" required="" id="id_title">
+
+
+            </p>
+
+
+            <p>
+                <label for="id_summary">Summary:</label>
+                <textarea name="summary" cols="40" rows="10" required="" id="id_summary"></textarea>
+
+
+            </p>
+
+
+            <p>
+                <label for="id_isbn">Isbn:</label>
+                <input type="text" name="isbn" maxlength="13" required="" id="id_isbn">
+
+
+            </p>
+
+
+            <p>
+                <label for="id_author">Author:</label>
+                <select name="author" required="" id="id_author">
+                    <option value="" selected="">---------</option>
+
+                    <option value="1">صادق هدایت</option>
+
+                    <option value="2">ک گ</option>
+
+                </select>
+
+
+            </p>
+
+
+            <p>
+                <label for="id_categories">Categories:</label>
+                <select name="categories" required="" id="id_categories" multiple="">
+                    <option value="1">رومان</option>
+
+                    <option value="2">علمی</option>
+
+                    <option value="3">تاریخی</option>
+
+                </select>
+
+
+            </p>
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <a href="/" class="btn btn-secondary">Cancel</a>
+    </form>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
